@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Imposter Syndrome Gate",
+  "version": "1.0.0",
+  "description": "Helps double check if you really want a dose of imposter syndrom from scrolling LinkedIn",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
